@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  border-style: border-box;
+}
+
 @font-face {
   font-family: Roboto;
   src: url("./font.css");
@@ -12,8 +17,10 @@
 }
 body {
   font-family: Roboto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+}
+
+.imagecontainer {
 }
 
 .desktop {
@@ -33,10 +40,52 @@ body {
 }
 
 h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 26px;
+  margin-bottom: 18px;
+  margin-left: 32px;
+  margin-right: 18px;
+}
+
+.join {
+  margin-left: 32px;
+  margin-right: 18px;
+}
+
+.subtext {
+  line-height: 3em;
+  margin-right: 18px;
 }
 
 p {
   font-size: 16px;
+  font-weight: 400;
+}
+
+.iconlist {
+  margin-right: 8px;
+  margin-left: 2px;
+}
+
+form {
+  display: inline-block;
+  padding: 12px;
+}
+
+input[type="email"] {
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  width: 80%;
+}
+input[type="button"] {
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px;
+  width: 80%;
 }
 
 .attribution {
